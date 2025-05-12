@@ -18,6 +18,10 @@ body {
   user-select: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 /*Variables for colors*/
 :root {
   --bg-light: #fdfae5;

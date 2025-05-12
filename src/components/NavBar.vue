@@ -2,8 +2,13 @@
   <div class="grid grid-cols-3 !px-4 !py-1 drag-region">
     <div class="flex items-center justify-start text-xs">
       <h1>PagansDev - Sticky Notes</h1>
+      <div class="flex items-center justify-center">
+        <button class="cursor-pointer not-drag-region">
+          <img src="@/assets/Icons/more-vert.svg" alt="settings" class="w-5 h-5" />
+        </button>
+      </div>
     </div>
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center pointer-events-none ">
       <img src="@/assets/Icons/drag-indicator.svg" alt="drag-indicator" class="w-8 h-8" />
     </div>
     <div class="flex items-center justify-end gap-4 ">
