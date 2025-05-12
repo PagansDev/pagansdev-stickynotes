@@ -8,9 +8,42 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/*remove default margin and padding*/
+/*remove default formatting,font antialiasing, text color*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-light);
+  user-select: none;
 }
+
+/*Variables for colors*/
+:root {
+  --bg-light: #fdfae5;
+  --separator-light: #b6b6b6;
+  --separator-dark: #e6e6e6;
+  --text-light: #646464;
+  --text-dark: #ebebeb;
+  --img-bg-light: #fffef6;
+}
+
+/* drag region */
+.drag-region {
+  -webkit-app-region: drag;
+}
+
+/* not drag region */
+.not-drag-region {
+  -webkit-app-region: no-drag;
+}
+
+
+.btn-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-hover:hover {
+  transform: scale(1.05);
+}
+
