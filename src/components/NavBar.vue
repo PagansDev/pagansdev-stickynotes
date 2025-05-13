@@ -2,10 +2,16 @@
   <div class="grid grid-cols-3 !px-4 !py-1 drag-region">
     <div class="flex items-center justify-start text-xs">
       <h1>PagansDev - Sticky Notes</h1>
-      <div class="flex items-center justify-center">
-        <button class="cursor-pointer not-drag-region">
-          <img src="@/assets/Icons/more-vert.svg" alt="settings" class="w-5 h-5" />
-        </button>
+      <div class="flex items-center justify-center not-drag-region">
+        <button
+        class="group relative w-5 h-5 cursor-pointer"
+      >
+        <img src="@/assets/Icons/more-vert.svg" alt="settings" class="w-5 h-5" />
+        <span
+          class="absolute top-0 left-16 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          >Configurações</span
+        >
+      </button>
       </div>
     </div>
     <div class="flex items-center justify-center pointer-events-none ">
