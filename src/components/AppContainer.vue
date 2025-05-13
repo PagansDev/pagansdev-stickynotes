@@ -1,5 +1,5 @@
 <template>
-  <main class="bg-[var(--bg-light)] h-screen">
+  <main class="bg-[var(--bg-light)] min-h-screen">
     <slot />
   </main>
 </template>
