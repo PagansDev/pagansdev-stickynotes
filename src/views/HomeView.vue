@@ -1,8 +1,22 @@
 <script setup>
+import AppContainer from '@/components/AppContainer.vue'
+import NavBar from '@/components/NavBar.vue'
+import Divider from '@/components/DividerHorizontal.vue'
+import AppToolbar from '@/components/AppToolbar.vue'
+import NotesGrid from '@/components/NotesGrid.vue'
+import NoteArea from '@/components/NoteCard/NoteArea.vue'
 </script>
 
 <template>
-  <main class="bg-amber-100 flex flex-col items-center justify-center h-screen">
-    <h1 class="text-4xl font-bold antialiased">Hello World</h1>
-  </main>
+  <AppContainer>
+    <NavBar />
+    <Divider />
+    <AppToolbar />
+    <Divider />
+    <NotesGrid>
+      <template #noteArea>
+        <NoteArea />
+      </template>
+    </NotesGrid>
+  </AppContainer>
 </template>
