@@ -6,7 +6,7 @@
       >
         <img src="@/assets/Icons/bold.svg" alt="bold" class="w-6 h-6" />
         <span
-          class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          class="font-bold absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
           >Negrito</span
         >
       </button>
@@ -15,7 +15,7 @@
       >
         <img src="@/assets/Icons/italic.svg" alt="italic" class="w-6 h-6" />
         <span
-          class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          class="italic absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
           >Itálico</span
         >
       </button>
@@ -24,7 +24,7 @@
       >
         <img src="@/assets/Icons/underscore.svg" alt="underline" class="w-6 h-6" />
         <span
-          class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          class="underline absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
           >Sublinhado</span
         >
       </button>
@@ -33,7 +33,7 @@
       >
         <img src="@/assets/Icons/strike.svg" alt="strikethrough" class="w-6 h-6" />
         <span
-          class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          class="line-through absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
           >Tachado</span
         >
       </button>
@@ -43,7 +43,7 @@
         <img src="@/assets/Icons/code.svg" alt="code" class="w-6 h-6" />
         <span
           class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
-          >Código</span
+          >&lt;Código&gt;</span
         >
       </button>
       <button
@@ -51,7 +51,7 @@
       >
         <img src="@/assets/Icons/highlight.svg" alt="highlight" class="w-6 h-6" />
         <span
-          class="absolute top-9 left-1/2 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          class="absolute top-9 left-1/2 -translate-x-1/2 bg-yellow-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
           >Destacar</span
         >
       </button>
