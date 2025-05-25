@@ -1,23 +1,26 @@
 <template>
   <div class="grid grid-cols-3 !px-4 !py-1 drag-region">
-    <div class="flex items-center justify-start text-xs">
+    <div class="flex items-center justify-start text-xs gap-4">
       <h1>PagansDev - Sticky Notes</h1>
-      <div class="flex items-center justify-center not-drag-region">
-        <button
-        class="group relative w-5 h-5 cursor-pointer"
-      >
-        <img src="@/assets/Icons/more-vert.svg" alt="settings" class="w-5 h-5" />
-        <span
-          class="absolute top-0 left-16 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
-          >Configurações</span
-        >
-      </button>
+      <div class="flex items-center gap-2 not-drag-region">
+        <!-- Notes management menu -->
+        <NotesMenu />
+
+        <!-- Settings button -->
+        <button class="group relative w-5 h-5 cursor-pointer">
+          <img src="@/assets/Icons/more-vert.svg" alt="settings" class="w-5 h-5" />
+          <span
+            class="absolute top-0 left-16 -translate-x-1/2 bg-gray-200 text-xs !p-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+          >
+            Configurações
+          </span>
+        </button>
       </div>
     </div>
-    <div class="flex items-center justify-center pointer-events-none ">
+    <div class="flex items-center justify-center pointer-events-none">
       <img src="@/assets/Icons/drag-indicator.svg" alt="drag-indicator" class="w-8 h-8" />
     </div>
-    <div class="flex items-center justify-end gap-4 ">
+    <div class="flex items-center justify-end gap-4">
       <button type="button" class="cursor-pointer not-drag-region" @click.prevent="minimize">
         <img src="@/assets/Icons/minimize.svg" alt="minimize" class="w-4 h-4" />
       </button>
@@ -32,6 +35,8 @@
 </template>
 
 <script setup>
+import NotesMenu from '@/components/NotesMenu.vue'
+
 function minimize() {
   console.log('minimize')
   window.electronAPI?.minimize()

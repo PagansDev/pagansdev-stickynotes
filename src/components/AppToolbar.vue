@@ -84,7 +84,7 @@
       </button>
     </div>
 
-    <DividerVertical :size=1.5 />
+    <DividerVertical :size="1.5" />
 
     <div class="flex items-center justify-end gap-2">
       <div class="flex items-center justify-center gap-2 cursor-pointer">
