@@ -29,8 +29,8 @@
 
 ## 5. Toolbar de Formatação Markdown
 
-- Criar uma barra de ferramentas com botões para inserir sintaxe Markdown (negrito, itálico, títulos, listas, etc).
-- Ao clicar em um botão, inserir a sintaxe correspondente no `<textarea>` na posição do cursor.
+- Utilizar o AppToolBar para sintaxe Markdown (negrito, itálico, títulos, listas, etc).
+- Ao clicar em um botão, inserir a sintaxe correspondente no `<textarea>` na seleção de texto(start e end).
 - Exemplos:
   - **Negrito:** Insere `**texto**`
   - **Itálico:** Insere `*texto*`
@@ -39,6 +39,7 @@
 ## 6. Salvando Arquivos `.md` Localmente
 
 - Ao salvar, criar um arquivo `.md` com o conteúdo do `<textarea>`.
+- Usar o título como nome do arquivo.
 - Para web, usar a API de download de arquivos (Blob + URL.createObjectURL).
 - Para desktop (Electron/Tauri), usar as APIs de sistema de arquivos.
 
